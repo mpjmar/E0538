@@ -5,9 +5,9 @@ public class App {
 		int altura = 0;
 		boolean correcto = false;
 
-		System.out.print("Por favor, introduzca la altura del reloj de arena: ");
 		do {
 			try {
+				System.out.print("Por favor, introduzca la altura del reloj de arena: ");
 				altura = Integer.parseInt(System.console().readLine());
 				correcto = altura >= 3 && altura % 2 != 0;
 				if (!correcto) System.out.println("Datos incorrectos. Debe introducir una altura mayor o igual a 3.");
