@@ -20,7 +20,7 @@ public class App {
 			}
 		} while (!correcto);
 
-		for (int i = 0; i < altura / 2; i++) {
+		/* for (int i = 0; i < altura / 2; i++) {
 			for (int j = 0; j < altura - i; j++)
 				System.out.print((j < i ? " " : "*"));
 			System.out.println();
@@ -32,6 +32,12 @@ public class App {
 			for (int j = 0; j < i * 2 - 1; j++)
 				System.out.print("*");
 			System.out.println();
-		} 
+		}  */
+
+		for (int i = 0; i < altura; i++) {
+			for (int j = 0; j < altura; j++)
+				System.out.print(((j == i) || (j == altura - i - 1)) ? "*" : " ");
+			System.out.println();
+		}
 	}
 }
